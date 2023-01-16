@@ -1,0 +1,43 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "ball inputbutton inputbutton jobb"
+    "ball resultrobot resultrobot jobb"
+    "ball alsokozep alsokozep jobb";
+}
+
+.inputbutton {
+  grid-area: inputbutton;
+}
+
+.resultrobot {
+  grid-area: resultrobot;
+}
+
+.alsokozep {
+  grid-area: alsokozep;
+}
+
+.ball {
+  grid-area: ball;
+}
+
+.jobb {
+  grid-area: jobb;
+}
+
+/* For presentation only, no need to copy the code below */
+.grid-container * {
+  border: 1px solid red;
+  position: relative;
+}
+
+.grid-container *:after {
+  content: attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+}

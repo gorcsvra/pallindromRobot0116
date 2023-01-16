@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="inputbutton">
+        <input type="text" id="input" onfocus="clearInput()" />
+        <button onclick="isPalindrome()">Check</button>
+      </div>
+      <div class="resultrobot">
+        <div id="result"></div>
+        <div class="robot rejtett">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets3.lottiefiles.com/private_files/lf30_z2v8goc8.json"
+            background="transparent"
+            speed="1"
+            style="width: 47rem; height: 300px"
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+
+      <div class="alsokozep"></div>
+      <div class="ball"></div>
+      <div class="jobb"></div>
+    </div>
+
+    <script src="palindrome.js"></script>
+  </body>
+</html>
